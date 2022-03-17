@@ -40,6 +40,7 @@ export interface AxiosRequestConfig {
 
 export interface CancelToken {
   promise: Promise<Cancel>
+  subs: any[]
   reason?: string
   throwIfRequested(): void
 }
