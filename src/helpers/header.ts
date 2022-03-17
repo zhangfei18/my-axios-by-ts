@@ -23,12 +23,12 @@ export function parseHeaders(headers: string): any {
   const parsed = Object.create(null)
   if (!headers) return
   headers.split('\r\n').forEach(function(header) {
-    let [key, val] = header.split(':')
+    let [key, ...vals] = header.split(':')
     if (!key) return
     key = key.trim()
-    if (val) {
-      val = val.trim()
-    }
+    // if (vals) {
+    const val = vals.join(':').trim()
+    // }
     parsed[key] = val
   })
   return parsed
