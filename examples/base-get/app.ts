@@ -2,7 +2,7 @@ import axios from '../../src/index'
 
 axios({
   method: 'get',
-  url: '/base/get1',
+  url: '/base/get',
   params: {
     foo: ['bar', 'baz']
   }
@@ -10,7 +10,7 @@ axios({
 
 axios({
   method: 'get',
-  url: '/base/get2',
+  url: '/base/get',
   params: {
     foo: {
       bar: 'baz'
@@ -22,7 +22,7 @@ const date = new Date()
 
 axios({
   method: 'get',
-  url: '/base/get3',
+  url: '/base/get',
   params: {
     date
   }
@@ -30,7 +30,7 @@ axios({
 
 axios({
   method: 'get',
-  url: '/base/get4',
+  url: '/base/get',
   params: {
     foo: '@:$, '
   }
@@ -38,7 +38,7 @@ axios({
 
 axios({
   method: 'get',
-  url: '/base/get5',
+  url: '/base/get',
   params: {
     foo: 'bar',
     baz: null
@@ -47,7 +47,7 @@ axios({
 
 axios({
   method: 'get',
-  url: '/base/get6#hash',
+  url: '/base/get#hash',
   params: {
     foo: 'bar'
   }
@@ -55,7 +55,7 @@ axios({
 
 axios({
   method: 'get',
-  url: '/base/get7?foo=bar',
+  url: '/base/get?foo=bar',
   params: {
     bar: 'baz'
   }
